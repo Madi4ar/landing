@@ -10,10 +10,10 @@ import Footer from './components/Footer';
 function LandingPage() {
   return (
     <>
+      <header>
+        <Header />
+      </header>
       <Layout>
-        <header>
-          <Header />
-        </header>
         <InfoSection />
         <Works />
         <WhyUs />

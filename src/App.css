@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url(../src/landing/assets/fonts/GraphikLCG-Regular.ttf);
+}

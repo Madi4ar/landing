@@ -89,7 +89,7 @@ function Footer() {
       </div>
 
       <div className="w-full flex flex-col lg:flex-row justify-between mt-20 pb-6">
-        <div className="flex items-center w-full justify-between lg:w-auto">
+        <div className="flex items-center w-full justify-between lg:w-[250px]">
           <Link to="/">
             <p className="text-[#7F7F7F]">Privacy policy</p>
           </Link>
@@ -111,7 +111,7 @@ function Footer() {
           </Link>
         </div>
 
-        <p className="text-[#7F7F7F] w-full mt-6 lg:mt-0">
+        <p className="text-[#7F7F7F] w-auto mt-6 lg:mt-0 font-['Graphik_LCG']">
           bizdin ai © 2024 All rights reserved
         </p>
       </div>

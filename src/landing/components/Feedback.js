@@ -37,10 +37,12 @@ function Feedback() {
           <SimpleSlider />
         </div>
 
-        <div className="flex flex-col lg:flex-row items-start justify-between mt-40">
-          <Title title="FAQ" position="left" />
+        <div className="flex flex-col lg:flex-row items-start justify-between mt-40 relative min-h-96">
+          <div className="w-full lg:w-[30%] absolute left-0 -top-14 md:top-0">
+            <Title title="FAQ" position="left" />
+          </div>
 
-          <div className="flex flex-col mt-10 md:mt-0 w-full lg:w-[70%]">
+          <div className="flex flex-col mt-20 lg:mt-0 w-full lg:w-[40%] absolute right-0">
             {faqsData.map((faq, index) => {
               const isOpen = openIndex === index;
               return (
