@@ -8,7 +8,7 @@ function Tabs() {
 
   return (
     <>
-      <div className="p-[6px] w-full flex lg:w-[410px] mt-6 border border-[rgba(255,255,255,0.15)] rounded-full items-center justify-between overflow-x-auto whitespace-nowrap">
+      <div className="p-[6px] w-full flex lg:w-auto mt-6 border border-[rgba(255,255,255,0.15)] rounded-full items-center justify-between overflow-x-auto whitespace-nowrap">
         {tabsData.map((tab, index) => {
           return (
             <Tab

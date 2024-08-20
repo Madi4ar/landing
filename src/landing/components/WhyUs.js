@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title/Title';
 import differentData from './data/differentData';
 import Button from './Button/Button';
+import ButtonModel from './Button/ButtonModel/ButtonModel';
 
 function WhyUs() {
   return (
@@ -50,7 +51,7 @@ function WhyUs() {
             instant execution!
           </span>{' '}
         </p>
-        <Button title="Join waitlist" url="#" arrow="true" />
+        <ButtonModel title="Join waitlist" url="#" arrow="true" />
       </div>
     </>
   );

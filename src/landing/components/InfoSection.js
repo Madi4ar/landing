@@ -4,7 +4,8 @@ import element from '../assets/images/001@1-3000x3000 6.png';
 import element1 from '../assets/images/001@1-3000x3000 7.png';
 import foundation from './data/foundationalData';
 import rectangle from '../assets/images/Rectangle 11.png';
-
+import ButtonModel from './Button/ButtonModel/ButtonModel';
+import Typewriter from 'typewriter-effect';
 function InfoSection() {
   return (
     <>
@@ -23,7 +24,7 @@ function InfoSection() {
             </span>{' '}
             to build the future.
           </p>
-          <Button title="Join waitlist" url="#" arrow="true" />
+          <ButtonModel title="Join waitlist" url="#" arrow="true" />
         </div>
 
         <div className="w-full flex justify-between">
@@ -35,22 +36,31 @@ function InfoSection() {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-between mt-60">
-          <div className="flex flex-col z-50 w-full lg:w-1/2">
-            {foundation.map((found) => {
-              return (
-                <div className="flex flex-col group mt-6 cursor-pointer">
-                  <p className="group-hover:text-white text-[#7F7F7F] cursor-pointer font-semibold text-2xl">
-                    {found.title}
-                  </p>
-                  <p className="border-b-2 pb-5 group-hover:border-white border-[#7F7F7F] group-hover:text-white text-[#7F7F7F] cursor-pointer w-full mt-4">
-                    {found.text}
-                  </p>
-                </div>
-              );
-            })}
+          <div className="flex flex-col items-start z-50 w-full lg:w-[45%]">
+            <p className="font-medium text-[32px] text-white">
+              Training a model that can see everything.
+            </p>
+            <p className="font-medium text-[#717681] text-xl mt-5">
+              Issue your command, and our AI springs into action without delay,
+              no coding needed.
+            </p>
+
+            <div className="mt-5 w-96 text-[#717681] py-4 px-2 border border-[#3849DB] rounded-xl">
+              <Typewriter
+                options={{
+                  strings: [
+                    'Detect when children smoke',
+                    'Show me who fought',
+                    'Wassup ma boy',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
           </div>
 
-          <div className="w-full lg:w-[45%]">
+          <div className="w-full lg:w-1/2">
             <img className="w-full" src={rectangle} alt="" />
           </div>
         </div>

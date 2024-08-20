@@ -7,6 +7,7 @@ import WhyUs from './components/WhyUs';
 import Hood from './components/Hood';
 import Feedback from './components/Feedback';
 import Footer from './components/Footer';
+import Partners from './components/Partners';
 function LandingPage() {
   return (
     <>
@@ -19,6 +20,7 @@ function LandingPage() {
         <WhyUs />
         <Hood />
         <Feedback />
+        <Partners />
         <footer>
           <Footer />
         </footer>
