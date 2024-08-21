@@ -42,7 +42,7 @@ function Feedback() {
             <Title title="FAQ" position="left" />
           </div>
 
-          <div className="flex flex-col mt-20 lg:mt-0 w-full lg:w-[40%] absolute right-0">
+          <div className="flex flex-col mt-5 lg:mt-0 w-full lg:w-[40%] absolute right-0">
             {faqsData.map((faq, index) => {
               const isOpen = openIndex === index;
               return (

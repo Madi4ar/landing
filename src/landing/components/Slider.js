@@ -29,7 +29,7 @@ function SimpleSlider() {
             <p className="text-white text-2xl leading-[32px] mt-6">
               {slider.author}
             </p>
-            <p className="text-[#7F7F7F] text-[20px] leading-[28px] mt-6">
+            <p className="text-[#7F7F7F] text-[20px] leading-[28px] mt-6 text-center">
               {slider.company}
             </p>
           </div>
