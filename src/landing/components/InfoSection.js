@@ -11,7 +11,7 @@ function InfoSection() {
   return (
     <>
       <div className="relative h-auto pb-40">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center z-20">
           <p className="mb-8 mt-28 text-white z-50 text-3xl md:text-5xl text-center w-full leading-[56px] font-semibold">
             We are a foundational model company, where <br />
             <span
@@ -31,7 +31,7 @@ function InfoSection() {
         <div className="w-full flex justify-between">
           <img
             src={element}
-            className="absolute top-5 -left-24 animate-pulse"
+            className="absolute top-5 -left-24 animate-pulse z-[-20]"
           />
           <img
             src={element1}

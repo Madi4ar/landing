@@ -42,6 +42,7 @@ function Header() {
         autoPlay
         muted
         loop
+        playsInline
         style={{
           transform: `scale(${scale})`,
         }}>
