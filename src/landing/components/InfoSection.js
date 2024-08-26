@@ -6,6 +6,7 @@ import foundation from './data/foundationalData';
 import rectangle from '../assets/images/Rectangle 11.png';
 import ButtonModel from './Button/ButtonModel/ButtonModel';
 import Typewriter from 'typewriter-effect';
+import animateVideo from '../assets/images/video-for-animation.mp4';
 function InfoSection() {
   return (
     <>
@@ -28,10 +29,13 @@ function InfoSection() {
         </div>
 
         <div className="w-full flex justify-between">
-          <img src={element} className="absolute top-5 -left-24" />
+          <img
+            src={element}
+            className="absolute top-5 -left-24 animate-pulse"
+          />
           <img
             src={element1}
-            className="hidden xl:flex absolute bottom-20 -right-20"
+            className="hidden xl:flex absolute bottom-20 -right-20 animate-pulse"
           />
         </div>
 
@@ -45,13 +49,13 @@ function InfoSection() {
               no coding needed.
             </p>
 
-            <div className="mt-5 w-96 text-[#717681] py-4 px-2 border border-[#3849DB] rounded-xl">
+            <div className="w-full mt-5 lg:w-96 text-[#717681] py-4 px-2 border border-[#3849DB] rounded-xl">
               <Typewriter
                 options={{
                   strings: [
-                    'Detect when children smoke',
+                    'Detect when people smoke',
                     'Show me who fought',
-                    'Wassup ma boy',
+                    'Some guy is working',
                   ],
                   autoStart: true,
                   loop: true,
@@ -60,8 +64,11 @@ function InfoSection() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
-            <img className="w-full" src={rectangle} alt="" />
+          <div className="w-full lg:w-1/2 mt-10 lg:mt-0 z-50">
+            <video className="w-full" autoPlay muted loop>
+              <source src={animateVideo} type="video/mp4" className="h-full" />
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
         </div>
       </div>

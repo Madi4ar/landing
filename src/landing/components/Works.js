@@ -27,7 +27,7 @@ function Works() {
             </div>
           </div>
 
-          <div className="w-full flex flex-wrap justify-between mt-10">
+          {/* <div className="w-full flex flex-wrap justify-between mt-10">
             {images.map((image, index) => (
               <img
                 key={index}
@@ -36,7 +36,7 @@ function Works() {
                 className="w-[32%]"
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

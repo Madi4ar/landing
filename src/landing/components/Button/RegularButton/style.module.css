@@ -1,0 +1,20 @@
+.button {
+  background: linear-gradient(90deg, #4dc9e6 0%, #210cae 100%);
+  backdrop-filter: blur(60px);
+  transition: background 0.3s ease, backdrop-filter 0.3s all ease;
+  padding: 10px 24px;
+  border-radius: 8px;
+  /* margin-left: 20px; */
+  border: 1px solid #210cae;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.button img {
+  margin-left: 5px;
+}
+.button:hover {
+  border: 1px solid #4dc9e6;
+  background: transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s all ease;
+}

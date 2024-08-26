@@ -79,17 +79,19 @@ function Footer() {
 
         <div className="flex flex-col ml-0 mt-5 md:mt-0 lg:ml-10">
           <p className="text-[#7F7F7F] text-base">Contacts</p>
-          <Link to="/">
-            <p className="text-white text-[18px] leading-6">hello@bizdin.ai</p>
+          <Link to="mailto:anurtazayev@bizdin.ai">
+            <p className="text-white text-[18px] leading-6">
+              anurtazayev@bizdin.ai
+            </p>
           </Link>
-          <Link to="/" className="mt-1">
-            <p className="text-white text-[18px] leading-6">+1 777 777 7777</p>
+          <Link to="tel:+7 705 775 6571" className="mt-1">
+            <p className="text-white text-[18px] leading-6">+7 705 775 6571</p>
           </Link>
         </div>
       </div>
 
       <div className="w-full flex flex-col lg:flex-row justify-between mt-20 pb-6">
-        <div className="flex items-center w-full justify-between lg:w-[250px]">
+        <div className="flex items-center w-full justify-between lg:w-[350px]">
           <Link to="/">
             <p className="text-[#7F7F7F]">Privacy policy</p>
           </Link>

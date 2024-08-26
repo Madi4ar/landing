@@ -21,7 +21,10 @@ function Tabs() {
         })}
       </div>
 
-      <TabContent content={tabsData[activeTab].content} />
+      <TabContent
+        content={tabsData[activeTab].content}
+        images={tabsData[activeTab].images}
+      />
     </>
   );
 }

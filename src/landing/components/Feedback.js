@@ -16,13 +16,13 @@ function Feedback() {
     <>
       <div className="py-16 relative h-full">
         <img
-          className="hidden xl:flex absolute bottom-0 -right-20 h-[772px]"
+          className="hidden xl:flex absolute bottom-0 -right-20 h-[772px] animate-pulse"
           src={geometric}
           alt=""
         />
 
         <img
-          className="hidden xl:flex absolute -top-24 -left-20 h-[772px]"
+          className="hidden xl:flex absolute -top-24 -left-20 h-[772px] animate-pulse"
           src={geometric1}
           alt=""
         />

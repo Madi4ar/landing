@@ -1,6 +1,10 @@
 import React from 'react';
 import Title from './Title/Title';
 import rectangle from '../assets/images/Rectangle 12.png';
+import photo from '../assets/images/person-using-futuristic-technology.jpg';
+import photo1 from '../assets/images/software-development-programming-computer-screen-modish-application.jpg';
+import photo2 from '../assets/images/business-woman.jpg';
+
 function Hood() {
   return (
     <>
@@ -17,38 +21,41 @@ function Hood() {
         <div className="flex flex-col lg:flex-row items-center mt-6 justify-between">
           <div className="w-full lg:w-[40%] flex flex-col">
             <p className="text-[#7F7F7F] text-base leading-6">
-              While we've made incredible progress developing AI systems that
-              can understand multimodal information, getting response time down
-              to something conversational is a difficult engineering challenge.
+              Our goal is to create technology that perceives the world like
+              human eyes.
             </p>
 
             <p className="text-[#7F7F7F] text-base leading-6 mt-6">
-              Over the past few years, we've been working to improve how our
-              models perceive, reason and converse to make the pace and quality
-              of interaction feel more natural.
+              We aim for our system to not only respond but to understand and
+              adapt to visual information with the same depth and accuracy as a
+              human. Our dream is to develop a model that feels as intuitive and
+              natural as possible, becoming an indispensable assistant in
+              everyday life.
             </p>
           </div>
 
-          <div className="w-full lg:w-1/2 flex items-center justify-between">
-            <div className="flex flex-col w-full">
-              <img src={rectangle} alt="" />
+          <div className="w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-between mt-5 lg:mt-0">
+            <div className="flex flex-col w-full mb-10 lg:mb-0">
+              <img className="rounded-lg" src={photo} alt="" />
               <p className="text-[#7F7F7F] text-base mt-5">
-                Combining the video and speech input into a timeline of events.
+                Augmenting the end-to-end solution with a complex system of
+                algorithms
               </p>
             </div>
 
-            <div className="flex flex-col w-full ml-10  ">
-              <div className="flex flex-col">
-                <img src={rectangle} alt="" />
+            <div className="flex flex-col w-full ml-0 lg:ml-10 ">
+              <div className="flex flex-col mb-10 lg:mb-0">
+                <img className="rounded-lg" src={photo1} alt="" />
                 <p className="text-[#7F7F7F] text-base mt-5">
-                  Continuously encoding video frames.
+                  Continuously encoding video frames and presenting real-time
+                  output
                 </p>
               </div>
 
               <div className="flex flex-col mt-6">
-                <img src={rectangle} alt="" />
+                <img className="rounded-lg" src={photo2} alt="" />
                 <p className="text-[#7F7F7F] text-base mt-5">
-                  Caching information for efficient recall.
+                  Improving model for better zero-shot results
                 </p>
               </div>
             </div>

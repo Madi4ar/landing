@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import Button from './Button/Button';
 import LanguageDropdown from './Dropdown/LanguageDropdown';
 import ButtonModel from './Button/ButtonModel/ButtonModel';
-import video from '../assets/images/Final Comp12.mp4';
+import video from '../assets/images/intro-video.mp4';
+import RegularButton from './Button/RegularButton/RegularButton';
 function Header() {
   const videoRef = useRef(null);
   const [scale, setScale] = useState(1);
@@ -56,12 +57,12 @@ function Header() {
             <LanguageDropdown />
           </div>
 
-          <div className="flex items-center hidden md:flex">
+          <div className="flex items-center hidden md:flex relative">
             <Link to="mailto:hello@bizdin.ai." className="text-base">
               Get in touch
             </Link>
             <div className="ml-5">
-              <Button title="Join waitlist" url="#" arrow="false" />
+              <RegularButton title="Join waitlist" url="#" arrow="false" />
             </div>
           </div>
         </div>
