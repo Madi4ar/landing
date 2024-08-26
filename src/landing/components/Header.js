@@ -39,10 +39,10 @@ function Header() {
       <video
         ref={videoRef}
         className="w-full absolute top-24 object-cover h-[calc(100%_-_6rem)] transition-transform duration-100 ease-in-out"
-        autoPlay
-        muted
-        loop
-        playsInline
+        loop={true}
+        muted={true}
+        autoplay={true}
+        playsinline={true}
         style={{
           transform: `scale(${scale})`,
         }}>
