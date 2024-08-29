@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Title from './Title/Title';
 import SimpleSlider from './Slider';
 import faqsData from './data/faqsData';
-import geometric from '../assets/images/001@1-3000x3000 5.png';
-import geometric1 from '../assets/images/001@1-3000x3000 8.png';
+import geometric from '../assets/images/001@1-3000x3000 6.png';
+import geometric1 from '../assets/images/001@1-3000x3000 7.png';
 
 function Feedback() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -14,15 +14,16 @@ function Feedback() {
 
   return (
     <>
-      <div className="py-16 relative h-full">
+      <div className="py-16 relative h-full lg:overflow-hidden">
         <img
-          className="hidden xl:flex absolute bottom-0 -right-20 h-[772px] animate-pulse"
+          className="hidden xl:flex absolute bottom-0 -right-96 h-[772px] animate-pulse"
           src={geometric}
           alt=""
+          style={{ clipPath: 'inset(0 0 0 0)' }}
         />
 
         <img
-          className="hidden xl:flex absolute -top-24 -left-20 h-[772px] animate-pulse"
+          className="hidden xl:flex absolute -top-20 -left-96 h-[772px] animate-pulse"
           src={geometric1}
           alt=""
         />

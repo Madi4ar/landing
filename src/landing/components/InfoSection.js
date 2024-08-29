@@ -75,7 +75,7 @@ function InfoSection() {
           <div className="w-full lg:w-1/2 mt-10 lg:mt-0 z-50">
             <video className="w-full rounded-lg" autoPlay muted loop>
               <source src={animateVideo} type="video/mp4" className="h-full" />
-              Ваш браузер не поддерживает видео.
+              Ваш браузер не поддерживает видео
             </video>
           </div>
         </div>
