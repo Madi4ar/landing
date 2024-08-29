@@ -19,8 +19,8 @@ function LandingPage() {
         <Works />
         <WhyUs />
         <Hood />
-        <Feedback />
         <Partners />
+        <Feedback />
         <footer>
           <Footer />
         </footer>

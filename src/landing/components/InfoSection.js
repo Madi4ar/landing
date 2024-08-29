@@ -2,8 +2,6 @@ import React from 'react';
 import Button from './Button/Button';
 import element from '../assets/images/001@1-3000x3000 6.png';
 import element1 from '../assets/images/001@1-3000x3000 7.png';
-import foundation from './data/foundationalData';
-import rectangle from '../assets/images/Rectangle 11.png';
 import ButtonModel from './Button/ButtonModel/ButtonModel';
 import Typewriter from 'typewriter-effect';
 import animateVideo from '../assets/images/video-for-animation.mp4';
@@ -11,7 +9,7 @@ function InfoSection() {
   return (
     <>
       <div className="relative h-auto pb-40">
-        <div className="flex flex-col items-center z-20">
+        <div className="flex flex-col items-center z-[100] relative">
           <p className="mb-8 mt-28 text-white z-50 text-3xl md:text-5xl text-center w-full leading-[56px] font-semibold">
             We are a foundational model company, where <br />
             <span
@@ -28,14 +26,14 @@ function InfoSection() {
           <ButtonModel title="Join waitlist" url="#" arrow="true" />
         </div>
 
-        <div className="w-full flex justify-between">
+        <div className="w-full flex items-start justify-between z-50 absolute top-0">
           <img
             src={element}
-            className="absolute top-5 -left-24 animate-pulse z-[-20]"
+            className="animate-pulse z-[-20] -ml-24 mt-32 scale-90"
           />
           <img
             src={element1}
-            className="hidden xl:flex absolute bottom-20 -right-20 animate-pulse"
+            className="hidden xl:flex scale-90 -mr-24 animate-pulse"
           />
         </div>
 
@@ -59,13 +57,15 @@ function InfoSection() {
                   ],
                   autoStart: true,
                   loop: true,
+                  typeSpeed: 35,
+                  deleteSpeed: 35,
                 }}
               />
             </div>
           </div>
 
           <div className="w-full lg:w-1/2 mt-10 lg:mt-0 z-50">
-            <video className="w-full" autoPlay muted loop>
+            <video className="w-full rounded-lg" autoPlay muted loop>
               <source src={animateVideo} type="video/mp4" className="h-full" />
               Ваш браузер не поддерживает видео.
             </video>

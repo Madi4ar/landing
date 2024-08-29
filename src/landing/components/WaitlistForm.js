@@ -28,7 +28,7 @@ const WaitlistForm = () => {
 
     try {
       const response = await axios.post(
-        'http://13.60.42.251:8686/auth/profile/waitlist/',
+        'https://backend.bizdin.ai/auth/profile/waitlist/',
         formData
       );
       if (response.status === 201) {

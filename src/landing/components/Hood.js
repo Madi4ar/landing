@@ -11,11 +11,12 @@ function Hood() {
       <div className="py-16">
         <Title title="Under the hood" position="center" />
         <p className="text-[#7F7F7F] text-base leading-7 lg:text-2xl font-normal lg:leading-[32px] text-center mt-6">
-          To be truly useful, an agent needs to understand and respond to the
-          complex and dynamic world just like people do — and take in and
-          remember what it sees and hears to understand context and take action.
-          It also needs to be proactive, teachable and personal, so users can
-          talk to it naturally and without lag or delay.
+          For an agent to be genuinely effective, it must comprehend and
+          interact with the intricate and ever-changing world as humans
+          do—absorbing and retaining visual information to grasp the context and
+          respond accordingly. It also needs to be forward-thinking, adaptable,
+          and intuitive, ensuring that users can engage with it effortlessly and
+          in real-time.
         </p>
 
         <div className="flex flex-col lg:flex-row items-center mt-6 justify-between">

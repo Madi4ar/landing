@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button/Button';
 import LanguageDropdown from './Dropdown/LanguageDropdown';
 import ButtonModel from './Button/ButtonModel/ButtonModel';
-import video from '../assets/images/intro-video.mp4';
+import video from '../assets/images/bizdin-ai-intro.mp4';
 import RegularButton from './Button/RegularButton/RegularButton';
 function Header() {
   const videoRef = useRef(null);
@@ -36,19 +36,22 @@ function Header() {
         alt=""
       /> */}
 
-      <video
-        ref={videoRef}
-        className="w-full absolute top-24 object-cover h-[calc(100%_-_6rem)] transition-transform duration-100 ease-in-out"
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{
-          transform: `scale(${scale})`,
-        }}>
-        <source src={video} type="video/mp4" className="h-full" />
-        Ваш браузер не поддерживает видео.
-      </video>
+      <div className="w-full h-[calc(100%_-_6rem)] absolute top-24 flex items-center justify-center">
+        <video
+          ref={videoRef}
+          className="w-full object-cover h-auto lg:h-full transition-transform duration-100 ease-in-out"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            transform: `scale(${scale})`,
+          }}>
+          <source src={video} type="video/mp4" className="h-full" />
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+
       <div className="container h-full px-3.5 md:px-0 sm: py-0 md:w-full md:py-0 lg:w-full mx-auto relative">
         <div className="flex items-center justify-between z-50 relative py-7">
           <div className="flex items-center justify-between w-full md:w-auto">
@@ -59,7 +62,7 @@ function Header() {
           </div>
 
           <div className="flex items-center hidden md:flex relative">
-            <Link to="mailto:hello@bizdin.ai." className="text-base">
+            <Link to="mailto:anurtazayev@bizdin.ai" className="text-base">
               Get in touch
             </Link>
             <div className="ml-5">

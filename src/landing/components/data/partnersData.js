@@ -1,6 +1,6 @@
 import partner1 from '../../assets/images/Frame 7.png';
-import partner2 from '../../assets/images/Frame 8.png';
-import partner3 from '../../assets/images/Frame 9.png';
+import partner2 from '../../assets/images/marina-bay-sands-seeklogo 2 2.png';
+import partner3 from '../../assets/images/Nvidia-White-Horizontal-Dark-Background-Logo.wine-removebg-preview.png';
 import partner4 from '../../assets/images/Frame 10.png';
 
 const partners = [
