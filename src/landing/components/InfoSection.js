@@ -1,11 +1,15 @@
 import React from 'react';
-import Button from './Button/Button';
+import { useInView } from 'react-intersection-observer';
 import element from '../assets/images/001@1-3000x3000 6.png';
 import element1 from '../assets/images/001@1-3000x3000 7.png';
 import ButtonModel from './Button/ButtonModel/ButtonModel';
 import Typewriter from 'typewriter-effect';
 import animateVideo from '../assets/images/video-for-animation.mp4';
 function InfoSection() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <>
       <div className="relative h-auto pb-40">
@@ -47,20 +51,24 @@ function InfoSection() {
               no coding needed.
             </p>
 
-            <div className="w-full mt-5 lg:w-96 text-[#717681] py-4 px-2 border border-[#3849DB] rounded-xl">
-              <Typewriter
-                options={{
-                  strings: [
-                    'Detect when people smoke',
-                    'Show me who fought',
-                    'Some guy is working',
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  typeSpeed: 35,
-                  deleteSpeed: 35,
-                }}
-              />
+            <div
+              ref={ref}
+              className="w-full mt-5 lg:w-96 text-[#717681] py-4 px-2 border border-[#3849DB] rounded-xl">
+              {inView && (
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Detect when people smoke',
+                      'Show me who fought',
+                      'Some guy is working',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    typeSpeed: 35,
+                    deleteSpeed: 35,
+                  }}
+                />
+              )}
             </div>
           </div>
 
